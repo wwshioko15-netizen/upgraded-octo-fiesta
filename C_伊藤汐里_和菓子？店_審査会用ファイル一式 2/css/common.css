@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+*,/*全称セレクタ*/
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, 
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;/*継承*/
+  text-decoration: none;
+}
+
+body{
+  font-family: serif;
+  font-size: 16px;
+  color: #114028;
+  line-height: 1;
+  background-color: #fff;
+}
+
+img{
+  max-width: 100%;/*フルードイメージ*/
+}
+
+.header-inner {
+  max-width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-menu-button {
+  display: none;
+}
+
+.header-logo {
+  display: block;
+  width: 170px;
+}
+
+.site-menu ul {
+  display: flex;/*小要素を横並びにする*/
+}
+
+.site-menu ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.site-menu ul li a {
+  font-family: fantasy, serif;
+  font-weight: bold;
+}
+
+footer {
+  color: #6e9079;
+  background-color: #efd3e7;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 235px;
+  margin-top: 90px;
+  font-family: fantasy, serif;
+}
+
+.footer-tel {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 28px;
+  font-family: fantasy, serif;
+}
+
+.footer-time {
+  font-size: 13px;
+  margin-top: 16px;
+  font-family: fantasy, serif;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 90px;
+  font-family: fantasy, serif;
+}
+
+@media (max-width: 800px) {
+  .site-menu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .site-menu li {
+    margin-top: 20px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 50px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    position: relative;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background-color: #736E62;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: none;
+  }
+
+  .header-site-menu.is-show {
+    display: block;
+  }
+
+  .toggle-menu-button {
+    display: block;
+    width: 44px;
+    height: 34px;
+    background-image: url(../images/common/icon-menu.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    margin-top: 60px;
+  }
+
+  .footer-tel {
+    font-size: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+}

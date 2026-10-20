@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>和菓子？店</title>
+  <script src="./js/toggle-menu.js"></script>
+  <link rel="stylesheet" href="../css/common.css">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    header{
+      width: 100%;
+      height: 100vh;
+      background-color: yellowgreen;
+      background-image: url(./image.jpg);
+      background-size: cover;
+    }
+
+    #topbar{
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      /* opacity: 0.8; */
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .txt1{
+      width: 200px;
+      height: 100px;
+      background-color: rgb(220, 199, 222);
+      margin: 5px;
+    }
+
+    .img{
+      height: 50px;
+      margin-left: 10px;
+    }
+
+    ul{
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    a{
+      display: block;
+      width: 130px;
+      height: center 50px;
+      /* border: 2px solid #ddd; */
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+    }
+
+    a:link{
+      font-family: fantasy, serif;
+    }
+
+    a:visited{
+      
+    }
+
+    a:hover{
+      /* border: 1px solid #999; */
+      background-color: rgb(188, 178, 188);
+      transform: scale(1.2);
+    }
+
+    a:active{
+    }
+
+    .box{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1{
+      font-family: 'fantasy', serif;
+      color: #517360;
+      text-shadow: 1px 1px 5px #092214;
+      background-color: #f3f9f3; /* ブランドカラーの薄緑 */
+      padding: 4px 12px;          /* 文字と背景の隙間 */
+      border-radius: 6px;
+    }
+
+    .item-list{
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .item-list li {
+      flex-shrink: 0;
+      width: 260px;
+      margin-left: 75px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <section id="topbar">
+      <img src="./logo.png" alt="和菓子？店">
+
+      <ul>
+        <li><a href="./concept.html">CONCEPT</a></li>
+        <li><a href="./menu.html">MENU</a></li>
+        <li><a href="./shop.html">SHOP</a></li>
+        <li><a href="./access.html">ACCESS</a></li>
+      </ul>
+
+    </section>
+
+    <div class="box">
+      <h1 class="anim-text" aria-label="それ、本当に和菓子？">
+        <span style="--index: 0;">それ、</span>
+        <span style="--index: 1;">本当に</span>
+        <span style="--index: 2;"><span class="highlight">和菓子?</span></span>
+      </h1>
+    </div>
+
+    <!-- CONCEPTページのキャッチコピー部分 -->
+  <!-- </header>
+  <table border="1">
+        <tr>
+          <td></td>
+        </tr>
+      </table> -->
+      <!-- <footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-navi">
+        <ul>
+          <li><a href="">このサイトについて</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <a href="" class="back-to-top"></a>
+    </div>
+  </footer>
+  </footer> -->
+</body>
+</html>
+
+<main class="main">
+    <div class="lead">
+      <p class="anim-text">
+        <p>若者層には「古い」「甘すぎる」と敬遠されがち。<br>そもそも和菓子が苦手な人は手をつけてもらえない。<br>そんな人たちに、「これって本当に和菓子なの？」と誰もが一度驚き、ワクワクするような、<br>洋のエッセンスを取り入れた革新的な創作菓子を提供します。<br><br>和菓子を敬遠していた層や和菓子が苦手な人にこそ「食べてみたい」と思わせるオリジナリティが最大の魅力です。<br></p>
+      <div class="link-button-area">
+        <a class="link-button" href="./concept.html">CONCEPT</a>
+      </div>
+    </div>
+    <div class="recommended">
+      <h2>RECOMMENDED🍡</h2>
+      <ul class="item-list">
+        <li>
+          <img src="./image1.jpg" alt="桜花餅の商品画像">
+          <dl>
+            <dt>桜花餅</dt>
+            <dd>桜と花をイメージした和菓子。<br>ほんのりと桜の風味が味わえる商品です。<br>ぜひ、桜と花をイメージしながら味わって見てください。 <br>※チョコレート/カスタード/こしあん/つぶあん選べます。</dd>
+          </dl>
+          <p class="price">¥200</p>
+        </li>
+        <li>
+          <img src="./image2.jpg" alt="いちご大福の商品画像">
+          <dl>
+            <dt>いちご大福</dt>
+            <dd>当店の大人気メニュー。<br>数量・季節ともに限定のため、見つけたらぜひお試しを。<br>※チョコ/クリームチーズ/ミルクホイップ/こしあん/つぶあん選べます。</dd>
+          </dl>
+          <p class="price">¥300</p>
+        <li>
+          <img src="./image6.jpg" alt="ホットドッグ - チリの商品画像">
+          <dl>
+            <dt>和菓子風なお菓子</dt>
+            <dd>外見は和菓子の柄ですが、味はラムネ味です。<br>少しだけ桜の風味がします。<br>※種類はお選びいただけません</dd>
+          </dl>
+          <p class="price">¥480</p>
+        </li>
+        <li>
+          <img src="./image8.jpg" alt="ホットドッグ - チリの商品画像">
+          <dl>
+            <dt>はなごころ（チーズケーキ味）</dt>
+            <dd>「菊」をモチーフにした練り切りです。<br>このお菓子は、日本の伝統的な美意識と季節感を象徴する逸品です。<br>※種類はお選びいただけません</dd>
+          </dl>
+          <p class="price">¥300</p>
+        </li>
+      </ul>
+      <div class="link-button-area">
+        <a class="link-button" href="./menu.html">MENU</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- footerここから -->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="./concept.html">CONCEPT</a></li>
+        <li><a href="./menu.html">MENU</a></li>
+        <li><a href="./shop.html">SHOP</a></li>
+        <li><a href="./access.html">ACCESS</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="./logo.png" alt="和菓子？店">
+    </a>
+    <p class="footer-tel">TEL 01-2345-6789</p>
+    <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+    <p class="copyright"><small>&copy;和菓子？店</small></p>
+  </footer>
+  <!-- footerここまで -->
